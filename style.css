@@ -497,7 +497,7 @@ section:hover {
 .contact form {
   display: flex;
   flex-direction: column;
-  align-items: center;     /* ✅ centers all rows */
+  align-items: center;     
   justify-content: center;
   width: 100%;
 }
@@ -505,12 +505,12 @@ section:hover {
 .contact .input-box {
   width: 100%;
   display: flex;
-  justify-content: center; /* ✅ keeps each row centered */
+  justify-content: center; 
 }
 
 .contact input,
 .contact textarea {
-  width: 60%;   /* ✅ make the fields centered & equal width */
+  width: 60%;   
   max-width: 700px;
 }
 
@@ -597,6 +597,7 @@ footer:hover {
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.04);
   transition: 0.4s;
+  text-align:center;
 }
 
 .cert-card:hover {
@@ -619,6 +620,7 @@ footer:hover {
 }
 
 .cert-btn {
+  margin:20px auto 0 auto;
   margin-top: 15px;
   display: inline-block;
   padding: 12px 25px;
@@ -628,6 +630,7 @@ footer:hover {
   font-size: 20px;
   text-decoration: none;
   transition: 0.3s;
+  
 }
 
 .cert-btn:hover {
@@ -673,6 +676,23 @@ footer:hover {
 
   .hamburger {
     display: flex;
+  }
+}
+
+/* MOBILE RESPONSIVE FIX */
+@media (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-box img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .home-content {
+    margin-top: 20px;
   }
 }
 
